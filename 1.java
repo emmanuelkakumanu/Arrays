@@ -12,12 +12,18 @@ class Ideone
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		int a[]=new int[n];
-		int sum=0;
 		for(int i=0;i<n;i++)
-		{
 			a[i]=s.nextInt();
-			sum=sum+a[i];
+		Ideone ob=new Ideone();
+		ob.add(n,a);
+	}
+	void add(int m,int[] b)
+	{
+		int sum=0;
+		for(int i=0;i<m;i++)
+		{
+			sum=sum+b[i];
 		}
-		System.out.print("Sum : "+sum);
+		System.out.print("sum : "+sum);
 	}
 }
